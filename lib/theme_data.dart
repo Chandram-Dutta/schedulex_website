@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:schedulex_website/responsive/responsive.dart';
 
 class DefaultTheme {
   ThemeData lightTheme = ThemeData(
