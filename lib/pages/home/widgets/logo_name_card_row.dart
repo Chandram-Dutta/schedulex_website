@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schedulex_website/responsive/responsive.dart';
+import 'package:schedulex_website/services/launch_url.dart';
 
 class LogoNameCardRow extends StatelessWidget {
   const LogoNameCardRow({
@@ -15,7 +16,7 @@ class LogoNameCardRow extends StatelessWidget {
             isDesktop(context, 800) ? 350 : MediaQuery.of(context).size.width,
         height: isDesktop(context, 350) ? 350 : null,
         child: Card(
-          elevation: 500,
+          elevation: 25,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
           color: Colors.deepOrange,
@@ -28,7 +29,7 @@ class LogoNameCardRow extends StatelessWidget {
               : MediaQuery.of(context).size.width,
           height: isDesktop(context, 800) ? 350 : null,
           child: Card(
-            elevation: 500,
+            elevation: 25,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0)),
             color: Colors.deepOrange,
@@ -45,9 +46,17 @@ class LogoNameCardRow extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 25,
                 ),
-                ElevatedButton(onPressed: () {}, child: const Text("Get Quote"))
+                ElevatedButton(
+                  onPressed: () {
+                    launchUrl("https://forms.gle/R2bYW4YLTHBQRTmj6");
+                  },
+                  child: const Text("Get Quote"),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
               ],
             ),
           )),
@@ -58,6 +67,8 @@ class LogoNameCardRow extends StatelessWidget {
             children: _elements,
           )
         : Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: _elements,
           );
   }

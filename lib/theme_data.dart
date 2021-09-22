@@ -15,11 +15,13 @@ class DefaultTheme {
           fontSize: 72,
           fontWeight: FontWeight.bold,
           color: Colors.black,
+          letterSpacing: 10,
           fontFamily: "Bangers"),
       headline2: TextStyle(
           fontSize: 50,
           fontWeight: FontWeight.bold,
           color: Colors.black,
+          letterSpacing: 5,
           fontFamily: "Bangers"),
       headline3: TextStyle(
           fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black),
@@ -42,9 +44,11 @@ class DefaultTheme {
             fontSize: 72.0,
             fontWeight: FontWeight.bold,
             color: Colors.white,
+            letterSpacing: 10,
             fontFamily: "Bangers"),
         headline2: TextStyle(
             fontSize: 50,
+            letterSpacing: 5,
             fontWeight: FontWeight.bold,
             color: Colors.white,
             fontFamily: "Bangers"),

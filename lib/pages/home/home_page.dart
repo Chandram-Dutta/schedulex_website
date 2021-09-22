@@ -9,7 +9,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarOpacity: 0,
         backgroundColor: Colors.transparent,
         title: Text(
           "Schedule X",
