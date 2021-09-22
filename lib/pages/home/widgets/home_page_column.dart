@@ -24,6 +24,11 @@ class HomePageColumn extends StatelessWidget {
             height: 50,
           ),
           OneAppText(),
+          Text(
+            "Android ॰ iOS ॰ MacOS ॰ Windows ॰ Linux ॰ Web ॰ Fuschia",
+            style: Theme.of(context).textTheme.headline4,
+            textAlign: TextAlign.center,
+          ),
           SizedBox(
             height: 50,
           ),

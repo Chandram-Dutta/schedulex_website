@@ -23,6 +23,12 @@ class DefaultTheme {
           color: Colors.black,
           letterSpacing: 5,
           fontFamily: "Bangers"),
+      headline4: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.black,
+          letterSpacing: 5,
+          fontFamily: "Bangers"),
       headline3: TextStyle(
           fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black),
       headline6: TextStyle(fontSize: 48, color: Colors.black),
