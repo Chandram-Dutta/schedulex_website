@@ -14,6 +14,15 @@ class OneAppText extends StatelessWidget {
       SizedBox(
         width: isDesktop(context, 800) ? 30 : 0,
       ),
+      isDesktop(context, 800)
+          ? Text(
+              "॰",
+              style: Theme.of(context).textTheme.headline1,
+            )
+          : const SizedBox(),
+      SizedBox(
+        width: isDesktop(context, 800) ? 30 : 0,
+      ),
       Text(
         "7 PLATFORMS",
         style: Theme.of(context).textTheme.headline1,

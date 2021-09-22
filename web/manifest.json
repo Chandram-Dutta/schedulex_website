@@ -1,6 +1,6 @@
 {
-    "name": "schedulex_website",
-    "short_name": "schedulex_website",
+    "name": "ScheduleX Home",
+    "short_name": "ScheduleX Home",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
